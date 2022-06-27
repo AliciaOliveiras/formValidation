@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+body {
+
+    height: 100vh;
+    background-color: #202020;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+input {
+
+    background-color: #202020;
+    border: 1px solid rgba(255, 255, 255, 0.079);
+    border-radius: 4px;
+    padding: 12px 12px;
+
+}
+
+form {
+
+    width: 600px;
+    margin: 0 auto;
+    background-color: #252525;
+    padding: 72px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+button {
+
+    padding: 12px;
+    background-color: #308254;
+    border: none;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: 300;
+
+}
+
+h1 {
+
+    margin-bottom: 32px;
+
+}
+
+.form-control {
+
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+    gap: 4px;
+
+}
+
+.form-control small {
+
+    color: rgb(218, 46, 46);
+    opacity: 0;
+
+}
+
+.form-control.error small {
+
+    opacity: 1;
+
+}
+
+.form-control.error input {
+
+    background-color: rgb(63, 32, 32);
+    border: 1px solid rgb(218, 46, 46);
+
+}
