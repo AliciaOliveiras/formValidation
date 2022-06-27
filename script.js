@@ -53,12 +53,14 @@ for (let control of formControlsElements) {
 
 // Validação das senhas
 
-userPasswordConfirmElement.addEventListener('blur', event => {
-    let verification = userpassWordElement.value !== userPasswordConfirmElement.value
+userPasswordConfirmElement.addEventListener('keyup', event => {
 
-    if(verification){
-        formControlElements[3].classList.add('error')
+    if (userpassWordElement.value == userPasswordConfirmElement.value) {
 
-        formValidation[event.target.id] = false
+       formControlsElements[3].classList.remove('error')
+        
+        } else {
+        formControlsElements[3].classList.add('error')
+        }
     }
-})
+)
